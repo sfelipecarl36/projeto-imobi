@@ -22,6 +22,10 @@ import AnunciarImovel from "./pages/AnunciarImovel";
 import MeusImoveis from "./pages/MeusImoveis";
 import EditarImovel from "./pages/EditarImovel";
 import DetalhesImovel from "./pages/DetalhesImovel";
+import Interessados from "./pages/Interessados";
+import MeusInteresses from "./pages/MeusInteresses";
+import Conversa from "./pages/Conversa";
+import MinhasConversas from "./pages/MinhasConversas";
 
 export default function App() {
   return (
@@ -40,6 +44,10 @@ export default function App() {
             <Route path="/anunciar" element={<AnunciarImovel />} />
             <Route path="/meus-imoveis" element={<MeusImoveis />} />
             <Route path="/meus-imoveis/:id/editar" element={<EditarImovel />} />
+            <Route path="/interessados" element={<Interessados />} />
+            <Route path="/meus-interesses" element={<MeusInteresses />} />
+            <Route path="/conversa/:id" element={<Conversa />} />
+            <Route path="/conversas" element={<MinhasConversas />} />
           </Route>
         </Routes>
 
