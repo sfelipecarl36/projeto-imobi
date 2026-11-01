@@ -27,7 +27,7 @@ export default function Tabs() {
     ]
 
         return (
-        <nav className="fixed bottom-0 left-0 w-full bg-white border-t border-gray-100 py-4">
+        <nav className="fixed bottom-0 left-0 z-50 w-full bg-white border-t border-gray-100 py-4">
         <div className="flex items-center justify-around max-w-md mx-auto">
             {tabOptions.map((tab) => {
             const Icone = tab.icone
