@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Tabs from "./components/Tabs"
 import Home from "./pages/Home"
 import Busca from "./pages/Busca"
 import Booking from "./pages/Booking"
@@ -14,6 +15,9 @@ export default function App () {
                 <Route path="/booking" element={<Booking/>}></Route>
                 <Route path="/perfil" element={<Perfil/>}></Route>
             </Routes>
+                
+                <Tabs/>
+
         </BrowserRouter>
     </>
    )
